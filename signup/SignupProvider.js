@@ -1,6 +1,6 @@
 import { sparrestApi } from "../SparrestApi.js";
 
-export const createApiUSer = async (username, password) => {
+export const createApiUser = async (username, password) => {
   const body = {
     username: username,
     password: password,

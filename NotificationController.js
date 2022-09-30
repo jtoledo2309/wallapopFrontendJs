@@ -1,15 +1,15 @@
-import { buildNotificationView } from "./notification-view";
+import { buildNotificationView } from "./notification-view.js";
 import { pubSub } from "./pubSub.js";
 
 export class NotificationController {
   constructor(nodeElement) {
     this.notificationElement = nodeElement;
 
-    this.suscribeEvents();
+    this.subscribeEvents();
   }
 
-  suscribeEvents() {
-    pubSub.suscribre(pubSub.TOPICS.PRODUCT_LOAD_ERROR, (message) => {
+  subscribeEvents() {
+    pubSub.subscribe(pubSub.TOPICS.PRODUCT_LOAD_ERROR, (message) => {
       this.showNotification(message);
     });
   }

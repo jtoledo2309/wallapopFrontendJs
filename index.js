@@ -1,4 +1,4 @@
-import { ProductListController } from "./products-list/ProductListController";
+import { ProductListController } from "./products-list/ProductListController.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   const productListElement = document.querySelector("#product-list");

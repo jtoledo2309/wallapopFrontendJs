@@ -1,7 +1,7 @@
 import { pubSub } from "../pubSub.js";
 import { createApiUser, loginApiUser } from "./SignupProvider.js";
 
-export class SignupComntroller {
+export class SignupController {
   constructor(nodeElement) {
     this.signupElement = nodeElement;
 
@@ -19,7 +19,7 @@ export class SignupComntroller {
     );
 
     const createUserButtonElement =
-      this.signupElement.querySelectorAll("createUserButton");
+      this.signupElement.querySelector("#createUserButton");
 
     createUserInputElements.forEach((createUserInputElement) => {
       createUserInputElement.addEventListener("input", () => {
@@ -49,7 +49,7 @@ export class SignupComntroller {
     const regExp = new RegExp(/^[a-zA-Z0-9]*$/);
 
     if (regExp.test(passwordElement.value)) {
-      this.createUser;
+      this.createUser();
     } else {
       pubSub.publish(
         pubSub.TOPICS.PRODUCT_LOAD_ERROR,
