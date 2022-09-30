@@ -1,9 +1,11 @@
 export const crearListado = (producto) => {
   const listaView = `
-    <p>${producto.name}</p>
-    <p>${producto.description}</p>
-    <p>${producto.price}</p>
-    <p>${producto.forSale}</p>
+    <p>Nombre del usuario: ${producto.name}</p>
+    <p>Producto: ${producto.description}</p>
+    <p>Precio: ${producto.price}$</p>
+    <p>Estado: ${producto.forSale}</p>
+    <a href="http://localhost:8080/productDetail.html?id=${producto.id}">Ver detalle del producto</a>
+    <p>-------------------------</p>
     `;
 
   return listaView;
