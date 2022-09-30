@@ -1,5 +1,6 @@
 import { pubSub } from "../pubSub.js";
 import { crearListado, listEmpty, listSpinner } from "./product-list-view.js";
+import { getProducts } from "./product-list-provider.js";
 
 export class ProductListController {
   constructor(nodeElement) {
@@ -13,9 +14,12 @@ export class ProductListController {
     let products = [];
 
     try {
-      products = await getProducts(); //necesito traerme los productos
+      products = await getProducts();
     } catch (error) {
-      pubSub.publish(pubSub.TOPICS.PRODUCT_LOAD_ERROR, error);
+      pubSub.publish(
+        pubSub.TOPICS.PRODUCT_LOAD_ERROR,
+        "Error cargando los productos"
+      );
     }
 
     if (products.length === 0) {

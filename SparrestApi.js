@@ -3,12 +3,12 @@ class SparrestApi {
   endpoints = {
     login: "/auth/login",
     signup: "/auth/register",
-    tweets: "/api/tweets",
+    products: "/api/products",
   };
   constructor() {}
 
   async get(endpoint) {
-    const response = fetch(`${this.baseUrl}${endpoint}`);
+    const response = await fetch(`${this.baseUrl}${endpoint}`);
 
     if (!response.ok) {
       throw new Error("No existen resultados");
