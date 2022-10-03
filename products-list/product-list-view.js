@@ -1,6 +1,6 @@
 export const crearListado = (producto) => {
   const listaView = `
-    <p>Nombre del usuario: ${producto.name}</p>
+    <p>Nombre del usuario: ${producto.user.username}</p>
     <p>Producto: ${producto.description}</p>
     <p>Precio: ${producto.price}$</p>
     <p>Estado: ${producto.forSale}</p>

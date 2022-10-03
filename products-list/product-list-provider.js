@@ -1,7 +1,8 @@
 import { sparrestApi } from "../SparrestApi.js";
 
 export async function getProducts() {
-  const products = await sparrestApi.get(sparrestApi.endpoints.products);
+  const endpoint = `${sparrestApi.endpoints.products}?_expand=user`;
+  const products = await sparrestApi.get(endpoint);
 
   return products;
 }
