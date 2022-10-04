@@ -13,21 +13,27 @@
     <form id="create-product-form" novalidate>
       <p>
       <label for="producto">Producto</label>
-      <input type="text" name="producto" id="producto"></input>
+      <input type="text" name="producto" id="producto" class="obligatory"></input>
+      </p>
+
+      <p>
+        <label for="description">Descripcion</label>
+        <input type="text" name="description" id="description" class="obligatory"></input>
       </p>
 
       <p>
       <label for="price">Precio</label>
-      <input type="text" name="price" id="price"></input>
+      <input type="text" name="price" id="price" class="obligatory"></input>
       </p>  
 
       <p>
-      <label for="forSale">Estado</label>
-      <input type="text" name="forSale" id="forSale"></input>
+      <label for="forSale">Estado</label></br>
+      <input type="radio" name="forSale" id="forSale" class="obligatory">Se vende</br>
+      <input type="radio" name="forSale" id="forSale" class="obligatory">Se busca</br>
       </p>
 
       <p>
-      <button class="create-product-button" type="submit">
+      <button id="create-product-button" disabled type="submit" >
         Subir producto
       </button>
       </p>

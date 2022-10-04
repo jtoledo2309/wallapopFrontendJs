@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio de sesion</title>
+  </head>
+  <body>
+    <form class="login-user-form">
+      <label>Inicio de sesion</label></br>
+      <label for="username"></label>
+      <input
+        id="username"
+        name="username"
+        type="text"
+        placeholder="Introduzca su usuario"
+      />
+
+      <label for="password"></label>
+      <input
+        id="password"
+        name="password"
+        type="text"
+        placeholder="Introduzca su contraseña"
+      />
+
+      <button id="loginUserButton" disabled type="submit">
+        Iniciar sesion
+      </button>
+    </form>
+
+    <script type="module" src="./login/index.js"></script>
+  </body>
+</html>
