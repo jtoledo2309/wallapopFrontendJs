@@ -48,5 +48,3 @@ export class ProductListController {
     }
   }
 }
-
-//NOTA: falta traerme los productos de alguna manera pero ya deberia verse tanto el spinner como mensajes de eroor como crear la dicha de producto

@@ -9,7 +9,5 @@ export const getProductsById = async (productId) => {
 };
 
 export const removeProductsById = async (productId) => {
-  const product = await sparrestApi.delete(
-    `${sparrestApi.endpoints.products}/${productId}`
-  );
+  await sparrestApi.delete(`${sparrestApi.endpoints.products}/${productId}`);
 };

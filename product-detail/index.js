@@ -13,10 +13,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const productId = params.get("id");
 
   const productDetailController = new ProductDetailCoontroller(
-    productDetailContainerElement,
-    productId
+    productDetailContainerElement
   );
+
   productDetailController.drawProductDetail(productId);
+
   const notificationController = new NotificationController(
     notificationContainerElement
   );

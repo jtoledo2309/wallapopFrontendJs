@@ -23,7 +23,9 @@ export class CreateProductController {
 
   createProduct() {
     const formData = new FormData(this.createProductElement);
-    const product = formData.get("product");
-    createApiProduct(product);
+    const producto = formData.get("producto");
+    const price = formData.get("price");
+    const forSale = formData.get("forSale");
+    createApiProduct(producto, price, forSale);
   }
 }

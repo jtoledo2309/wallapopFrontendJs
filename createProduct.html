@@ -9,18 +9,28 @@
   <body>
     <h2>Detalles del producto</h2>
     <section class="notification-container"></section>
-    <form id="create-product-form">
-      <label for="product-creation"></label>
-      <textarea
-        name="product"
-        id="product-creation"
-        cols="50"
-        rows="20"
-      ></textarea>
 
+    <form id="create-product-form" novalidate>
+      <p>
+      <label for="producto">Producto</label>
+      <input type="text" name="producto" id="producto"></input>
+      </p>
+
+      <p>
+      <label for="price">Precio</label>
+      <input type="text" name="price" id="price"></input>
+      </p>  
+
+      <p>
+      <label for="forSale">Estado</label>
+      <input type="text" name="forSale" id="forSale"></input>
+      </p>
+
+      <p>
       <button class="create-product-button" type="submit">
         Subir producto
       </button>
+      </p>
     </form>
 
     <script type="module" src="./create-product/index.js"></script>

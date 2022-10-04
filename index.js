@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const handleUserLogged = () => {
     const token = localStorage.getItem("token");
-    const userActions = document.querySelector("user-actions");
+    const userActions = document.querySelector("#user-actions");
     if (token) {
       userActions.innerHTML =
         '<a href="/createProduct.html">Subir producto</a>';
