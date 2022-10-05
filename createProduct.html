@@ -11,6 +11,7 @@
     <section class="notification-container"></section>
 
     <form id="create-product-form" novalidate>
+
       <p>
       <label for="producto">Producto</label>
       <input type="text" name="producto" id="producto" class="obligatory"></input>
@@ -28,10 +29,16 @@
 
       <p>
       <label for="forSale">Estado</label></br>
-      <input type="radio" name="forSale" id="forSale" class="obligatory">Se vende</br>
-      <input type="radio" name="forSale" id="forSale" class="obligatory">Se busca</br>
+      <input type="radio" name="forSale" id="forSale" class="obligatory" value="Se vende">Se vende</br>
+      <input type="radio" name="forSale" id="forSale" class="obligatory" value="Se busca">Se busca</br>
       </p>
 
+      <p>
+        <label for="image-product">Imagen del producto (URL)</label>
+      <input  name="image-product" class="image-product" alt="Imagen del producto">
+      </p>
+
+      <img src="" alt="">
       <p>
       <button id="create-product-button" disabled type="submit" >
         Subir producto

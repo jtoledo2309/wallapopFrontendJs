@@ -27,6 +27,7 @@ export class ProductDetailCoontroller {
 
   drawRemoveButton() {
     const token = localStorage.getItem("token");
+    console.log(token);
     if (token) {
       const tokenData = decodeToken(token);
 

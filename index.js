@@ -19,7 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
       userActions.innerHTML =
         '<a href="/createProduct.html">Subir producto</a>';
     } else {
-      userActions.innerHTML = '<a href="/signup.html">Inicia sesión</a>';
+      userActions.innerHTML =
+        '<a href="/signup.html">Registrate</a><p><a href="/login.html">Inicia sesion</a></p>';
     }
   };
 

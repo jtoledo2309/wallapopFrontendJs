@@ -66,6 +66,8 @@ export class LoginController {
     try {
       const jwt = await loginApiUser(username, password);
       localStorage.setItem("token", jwt);
+      alert("Usuario creado correctamente");
+      window.location = "/";
     } catch (error) {
       throw new Error(error);
     }

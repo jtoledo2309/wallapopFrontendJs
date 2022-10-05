@@ -44,6 +44,9 @@ export class CreateProductController {
     const description = formData.get("description");
     const price = formData.get("price");
     const forSale = formData.get("forSale");
-    createApiProduct(producto, description, price, forSale);
+    const imageProduct = formData.get("image-product");
+    createApiProduct(producto, description, price, forSale, imageProduct);
+    alert("Producto creado correctamente");
+    window.location = "/";
   }
 }
