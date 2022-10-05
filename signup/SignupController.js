@@ -66,7 +66,6 @@ export class SignupController {
     try {
       await createApiUser(username, password);
       const jwt = await loginApiUser(username, password);
-      console.log(jwt);
       localStorage.setItem("token", jwt);
       alert("Usuario registrado correctamente");
       window.location = "/";

@@ -65,8 +65,10 @@ export class LoginController {
 
     try {
       const jwt = await loginApiUser(username, password);
+      console.log(jwt);
+      //if(username y password existen en la BBDD)
       localStorage.setItem("token", jwt);
-      alert("Usuario creado correctamente");
+      alert("Usuario logeado correctamente");
       window.location = "/";
     } catch (error) {
       throw new Error(error);

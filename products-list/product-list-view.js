@@ -1,5 +1,6 @@
 export const crearListado = (producto) => {
   const listaView = `
+    <p>Imagen: <img width="25%" height="25%" src="${producto.imageProduct}" alt="Imagen del producto"></p>
     <p>Nombre del usuario: ${producto.user.username}</p>
     <p>Producto: ${producto.name}</p>
     <p>Descripcion: ${producto.description}</p>
