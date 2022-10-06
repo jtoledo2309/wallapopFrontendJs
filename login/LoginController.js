@@ -62,16 +62,17 @@ export class LoginController {
     const formData = new FormData(this.loginElement);
     const username = formData.get("username");
     const password = formData.get("password");
+    //console.log(username);
+    //console.log(password);
 
-    try {
-      const jwt = await loginApiUser(username, password);
-      console.log(jwt);
-      //if(username y password existen en la BBDD)
+    const jwt = await loginApiUser(username, password);
+    //console.log(jwt);
+    if (jwt) {
       localStorage.setItem("token", jwt);
       alert("Usuario logeado correctamente");
       window.location = "/";
-    } catch (error) {
-      throw new Error(error);
+      return;
     }
+    pubSub.publish(pubSub.TOPICS.PRODUCT_LOAD_ERROR, "Usuario no existe");
   }
 }

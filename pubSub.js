@@ -24,6 +24,7 @@ class PubSub {
   }
 
   publish(topic, info) {
+    console.log(topic, info);
     // If the topic doesn't exist, or there's no listeners in queue, just leave
     if (!this.hOP.call(this.topics, topic)) return;
 

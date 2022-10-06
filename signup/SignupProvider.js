@@ -16,5 +16,6 @@ export const loginApiUser = async (username, password) => {
   };
 
   const data = await sparrestApi.post(sparrestApi.endpoints.login, body);
+
   return data.accessToken;
 };

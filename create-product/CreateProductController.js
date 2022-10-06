@@ -1,3 +1,4 @@
+import { pubSub } from "../pubSub.js";
 import { createApiProduct } from "./CreateProductProvider.js";
 
 export class CreateProductController {
@@ -38,15 +39,29 @@ export class CreateProductController {
     });
   }
 
-  createProduct() {
+  async createProduct() {
     const formData = new FormData(this.createProductElement);
     const producto = formData.get("producto");
     const description = formData.get("description");
     const price = formData.get("price");
     const forSale = formData.get("forSale");
     const imageProduct = formData.get("image-product");
-    createApiProduct(producto, description, price, forSale, imageProduct);
-    alert("Producto creado correctamente");
-    window.location = "/";
+
+    try {
+      await createApiProduct(
+        producto,
+        description,
+        price,
+        forSale,
+        imageProduct
+      );
+      alert("Producto creado correctamente");
+      window.location = "/";
+    } catch (error) {
+      pubSub.publish(
+        pubSub.TOPICS.PRODUCT_LOAD_ERROR,
+        "Error en la creacion del producto"
+      );
+    }
   }
 }

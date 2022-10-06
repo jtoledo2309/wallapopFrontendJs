@@ -1,17 +1,17 @@
 import { sparrestApi } from "../SparrestApi.js";
 
-export const createApiProduct = (
+export async function createApiProduct(
   producto,
   description,
   price,
   forSale,
   imageProduct
-) => {
-  sparrestApi.post(sparrestApi.endpoints.products, {
+) {
+  await sparrestApi.post(sparrestApi.endpoints.products, {
     name: producto,
     description: description,
     price: price,
     forSale: forSale,
     imageProduct: imageProduct,
   });
-};
+}
