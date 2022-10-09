@@ -1,5 +1,9 @@
 import { pubSub } from "../pubSub.js";
-import { createApiUser, loginApiUser } from "./SignupProvider.js";
+import {
+  comprobateUsers,
+  createApiUser,
+  loginApiUser,
+} from "./SignupProvider.js";
 
 export class SignupController {
   constructor(nodeElement) {
@@ -66,6 +70,11 @@ export class SignupController {
     try {
       await createApiUser(username, password);
       const jwt = await loginApiUser(username, password);
+      if (jwt === undefined) {
+        alert("Usuario ya registrado, pruebe con otro");
+        window.location = "/signup.html";
+        return;
+      }
       localStorage.setItem("token", jwt);
       alert("Usuario registrado correctamente");
       window.location = "/";

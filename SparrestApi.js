@@ -4,6 +4,7 @@ class SparrestApi {
     login: "/auth/login",
     signup: "/auth/register",
     products: "/api/products",
+    users: "/api/users",
   };
   constructor() {}
 

@@ -62,11 +62,8 @@ export class LoginController {
     const formData = new FormData(this.loginElement);
     const username = formData.get("username");
     const password = formData.get("password");
-    //console.log(username);
-    //console.log(password);
 
     const jwt = await loginApiUser(username, password);
-    //console.log(jwt);
     if (jwt) {
       localStorage.setItem("token", jwt);
       alert("Usuario logeado correctamente");
@@ -74,5 +71,8 @@ export class LoginController {
       return;
     }
     pubSub.publish(pubSub.TOPICS.PRODUCT_LOAD_ERROR, "Usuario no existe");
+    setTimeout(() => {
+      window.location = "/login.html";
+    }, 3000);
   }
 }

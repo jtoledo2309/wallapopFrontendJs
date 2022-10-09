@@ -19,3 +19,10 @@ export const loginApiUser = async (username, password) => {
 
   return data.accessToken;
 };
+
+export async function comprobateUsers() {
+  const endpoint = `${sparrestApi.endpoints.users}`;
+  const users = await sparrestApi.get(endpoint);
+
+  return users;
+}
