@@ -1,9 +1,5 @@
 import { pubSub } from "../pubSub.js";
-import {
-  comprobateUsers,
-  createApiUser,
-  loginApiUser,
-} from "./SignupProvider.js";
+import { createApiUser, loginApiUser } from "./SignupProvider.js";
 
 export class SignupController {
   constructor(nodeElement) {
@@ -25,12 +21,14 @@ export class SignupController {
     const createUserButtonElement =
       this.signupElement.querySelector("#createUserButton");
 
+    const passwordElement = this.signupElement.querySelector("#password");
+
     createUserInputElements.forEach((createUserInputElement) => {
       createUserInputElement.addEventListener("input", () => {
         const areInputsFilled = createUserInputElements.every(
           (inputElement) => inputElement.value
         );
-        if (areInputsFilled) {
+        if (areInputsFilled && passwordElement.value.length >= 6) {
           createUserButtonElement.removeAttribute("disabled");
         } else {
           createUserButtonElement.setAttribute("disabled", "");

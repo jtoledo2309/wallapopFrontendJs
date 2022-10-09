@@ -1,0 +1,136 @@
+{
+  "users": [
+    {
+      "username": "user1",
+      "password": "$2b$10$Ay1tb1N4olQADry9JdGSTeWT9oqPSDUvcN8iBeiIj.QrOUtgGj3sG",
+      "id": 1
+    },
+    {
+      "username": "user2",
+      "password": "$2b$10$Ay1tb1N4olQADry9JdGSTeHN/50/1e8muKpx6oFKLJrj.PtWLqXUS",
+      "id": 2
+    },
+    {
+      "username": "user3",
+      "password": "$2b$10$Ay1tb1N4olQADry9JdGSTev6SPdju9sj8XtWrWkwEmwiyOlcC5TlC",
+      "id": 3
+    },
+    {
+      "username": "user4",
+      "password": "$2b$10$Ay1tb1N4olQADry9JdGSTeHBa9ase6scAozMR8Khj38IejBAuxRhy",
+      "id": 4
+    },
+    {
+      "username": "user7",
+      "password": "$2b$10$Ay1tb1N4olQADry9JdGSTem4iumbZALvaS9n2E645wjV1yY99wMcu",
+      "id": 5
+    },
+    {
+      "username": "user9",
+      "password": "$2b$10$Ay1tb1N4olQADry9JdGSTem5D7ccTwPUZQN0m5dO2uAWrX.pEpK0y",
+      "id": 6
+    },
+    {
+      "username": "usuario10",
+      "password": "$2b$10$Ay1tb1N4olQADry9JdGSTeOW6nmDp3hU.5tutPYVuPhFb/iDRdg3u",
+      "id": 7
+    },
+    {
+      "username": "usuario11",
+      "password": "$2b$10$Ay1tb1N4olQADry9JdGSTeV7hX/6RCS/Ea7JqFDOb/pmfGwvh2bEm",
+      "id": 8
+    },
+    {
+      "username": "usuario12",
+      "password": "$2b$10$Ay1tb1N4olQADry9JdGSTeO4w/BWeHbEgLLQLv/ragzU.efFkUglq",
+      "id": 9
+    },
+    {
+      "username": "user14",
+      "password": "$2b$10$Ay1tb1N4olQADry9JdGSTei0H3OWcNEPnx287vq57H1q7gpzN48aK",
+      "id": 10
+    },
+    {
+      "username": "usuario16",
+      "password": "$2b$10$Ay1tb1N4olQADry9JdGSTeJg9JZEdSRApQK4E2vhwX7LhcKOsQ0n.",
+      "id": 11
+    },
+    {
+      "username": "usuario17",
+      "password": "$2b$10$Ay1tb1N4olQADry9JdGSTeHAB9OioVhCoMa6RY..zttuND.T9X7VS",
+      "id": 12
+    },
+    {
+      "username": "dfbbs",
+      "password": "$2b$10$in4w47b91jJ09L9sgOkjPeXNt6dtpa7SKxBK1zpWS7NaAFFb7vPR2",
+      "id": 13
+    },
+    {
+      "username": "dfsbsfb",
+      "password": "$2b$10$in4w47b91jJ09L9sgOkjPevddSHAYDqNtENEw7Y/o9tR7p/wJaetO",
+      "id": 14
+    },
+    {
+      "username": "fvbasf",
+      "password": "$2b$10$in4w47b91jJ09L9sgOkjPeP/KHL7FqSEm.G.de6acWCA0SofzLOuC",
+      "id": 15
+    },
+    {
+      "username": "sfvv",
+      "password": "$2b$10$in4w47b91jJ09L9sgOkjPe7GrqaYaNQyFaPiXM9lfQHWmv9XQehke",
+      "id": 16
+    },
+    {
+      "username": "dsfbfb",
+      "password": "$2b$10$in4w47b91jJ09L9sgOkjPeBUJWqvsnidiBOhXP6Q.dwpVoZwAxGZm",
+      "id": 17
+    },
+    {
+      "username": "usuario 20",
+      "password": "$2b$10$in4w47b91jJ09L9sgOkjPeQ/0Jt10YNnnOgIU6qi2yVHtY17z2mC.",
+      "id": 18
+    }
+  ],
+  "products": [
+    {
+      "name": "Prueba167",
+      "description": "Portada CD",
+      "price": "18",
+      "forSale": "Se vende",
+      "imageProduct": "https://i.postimg.cc/d3T6VqCX/demasiadas-mujeres-cover.jpg' border='0' alt='demasiadas-mujeres-cover'",
+      "userId": 11,
+      "updatedAt": "2022-10-05T19:20:56.172Z",
+      "id": 16
+    },
+    {
+      "name": "Pelicula",
+      "description": "Cinema Paradiso",
+      "price": "100",
+      "forSale": "Se vende",
+      "imageProduct": "https://i.postimg.cc/tRLCkfWD/Cinema-Paradiso-225068665-large.jpg",
+      "userId": 12,
+      "updatedAt": "2022-10-05T22:38:30.097Z",
+      "id": 17
+    },
+    {
+      "name": "Camiseta",
+      "description": "Camiseta de futbol",
+      "price": "40",
+      "forSale": "Se busca",
+      "imageProduct": "https://i.postimg.cc/nVq68wN3/camiseta.jpg",
+      "userId": 12,
+      "updatedAt": "2022-10-05T22:39:56.738Z",
+      "id": 18
+    },
+    {
+      "name": "Movil",
+      "description": "Iphone nuevo",
+      "price": "450",
+      "forSale": "Se vende",
+      "imageProduct": "https://i.postimg.cc/cLPmLdnw/iphone.jpg",
+      "userId": 12,
+      "updatedAt": "2022-10-05T22:41:43.265Z",
+      "id": 19
+    }
+  ]
+}
