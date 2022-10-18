@@ -38,6 +38,7 @@ class SparrestApi {
 
   async delete(endpoint) {
     const token = localStorage.getItem("token");
+    console.log(token);
     const response = await fetch(`${this.baseUrl}${endpoint}`, {
       method: "DELETE",
       headers: {
