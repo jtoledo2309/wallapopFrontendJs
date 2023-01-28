@@ -6,7 +6,7 @@ export const crearListado = (producto) => {
     <p>Descripcion: ${producto.description}</p>
     <p>Precio: ${producto.price}$</p>
     <p>Estado: ${producto.forSale}</p>
-    <a href="http://localhost:8080/productDetail.html?id=${producto.id}">Ver detalle del producto</a>
+    <a href="/productDetail.html?id=${producto.id}">Ver detalle del producto</a>
     <p>-------------------------</p>
     `;
 
